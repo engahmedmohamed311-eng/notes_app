@@ -16,9 +16,15 @@ class NotesView
             backgroundColor:
                 Colors.cyanAccent,
             onPressed: () {
-              showModalBottomSheet(context: context, builder: (context){
-                return const AddNoteBottomSheet();
-              });
+              showModalBottomSheet(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(22)
+                ),
+                context: context,
+                builder: (context) {
+                  return const AddNoteBottomSheet();
+                },
+              );
             },
             child: Icon(
               Icons.add,
