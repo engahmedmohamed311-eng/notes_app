@@ -37,7 +37,7 @@ class NoteItem extends StatelessWidget {
               child: Text(
                 "Build yours Career with Ahmed Mohamed",
                 style: TextStyle(
-                  fontSize: 23,
+                  fontSize: 18,
                   color: Colors.black
                       .withValues(
                         alpha: .5,
