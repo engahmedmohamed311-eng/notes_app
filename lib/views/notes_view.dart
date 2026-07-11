@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:notes/widgets/constants.dart';
 
-import '../widgets/add_note_bottom_sheet.dart';
+import 'add_note_bottom_sheet.dart';
 import 'notes_view_body.dart';
 
 class NotesView

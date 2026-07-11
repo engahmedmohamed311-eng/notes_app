@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:notes/widgets/custom_app_bar.dart';
+import 'package:notes/widgets/custom_buttom.dart';
 
 import '../widgets/notes_list_view.dart';
 
@@ -22,7 +23,9 @@ class NotesViewBody
           const CustomAppBar(),
           Expanded(
             child: NotesListView(),
+
           ),
+
         ],
       ),
     );
