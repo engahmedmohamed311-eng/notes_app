@@ -10,13 +10,13 @@ class NotesViewBody
 
   @override
   Widget build(BuildContext context) {
-    return const Padding(
+    return  Padding(
       padding:
-          const EdgeInsets.symmetric(
+           EdgeInsets.symmetric(
             horizontal: 14,
             vertical: 10,
           ),
-      child: const Column(
+      child:  Column(
         children: [
           SizedBox(height: 50),
           const CustomAppBar(),

@@ -1,5 +1,4 @@
 import 'package:flutter/cupertino.dart';
-
 import 'note_item.dart';
 
 class NotesListView
@@ -20,10 +19,10 @@ class NotesListView
         itemBuilder: (context, index) {
           return const Padding(
             padding:
-                const EdgeInsets.symmetric(
+                 EdgeInsets.symmetric(
                   vertical: 4,
                 ),
-            child: const NoteItem(),
+            child:  NoteItem(),
           );
         },
       ),

@@ -3,15 +3,20 @@ import 'package:notes/widgets/constants.dart';
 
 class CustomTextField
     extends StatelessWidget {
-  const CustomTextField({super.key});
-
+  const CustomTextField({super.key, required this.hint,  this.maxLines = 1});
+final String hint;
+final int maxLines;
   @override
   Widget build(BuildContext context) {
     return TextField(
+      maxLines: maxLines,
+
       cursorColor: kPrimaryColor,
       decoration: InputDecoration(
-        hintText: 'Title',
-        hintStyle: TextStyle(color: kPrimaryColor),
+        hintText: hint,
+
+        hintStyle: TextStyle(),
+        enabledBorder: buildBorder(),
         border: buildBorder(),
         focusedBorder: buildBorder(kPrimaryColor),
       ),
@@ -25,8 +30,7 @@ class CustomTextField
       borderRadius:
           BorderRadius.circular(16),
       borderSide: BorderSide(
-        color:
-            kPrimaryColor,
+        color: color?? Colors.white,
       ),
     );
   }
