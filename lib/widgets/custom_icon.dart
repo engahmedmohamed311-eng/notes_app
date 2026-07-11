@@ -12,14 +12,14 @@ class CustomIcon
       height: 45,
       decoration: BoxDecoration(
         color: Colors.white.withValues(
-          alpha: 0.08
+          alpha: 0.08,
         ),
         borderRadius:
             BorderRadius.circular(16),
       ),
 
-      child:const Center(
-        child:const Icon(
+      child: const Center(
+        child: const Icon(
           Icons.search_rounded,
           size: 28,
         ),

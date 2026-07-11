@@ -16,11 +16,13 @@ class NotesViewBody
             horizontal: 14,
             vertical: 10,
           ),
-      child:const Column(
+      child: const Column(
         children: [
           SizedBox(height: 50),
           const CustomAppBar(),
-          Expanded(child: NotesListView())
+          Expanded(
+            child: NotesListView(),
+          ),
         ],
       ),
     );

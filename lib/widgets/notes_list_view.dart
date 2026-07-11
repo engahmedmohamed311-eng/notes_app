@@ -9,9 +9,14 @@ class NotesListView
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 16),
+      padding:
+          const EdgeInsets.symmetric(
+            vertical: 16,
+          ),
       child: ListView.builder(
-        padding: EdgeInsets.only(bottom: 60),
+        padding: EdgeInsets.only(
+          bottom: 60,
+        ),
         itemBuilder: (context, index) {
           return const Padding(
             padding:
