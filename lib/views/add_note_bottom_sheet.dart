@@ -20,14 +20,15 @@ class AddNoteBottomSheet
             SizedBox(height: 32),
             CustomTextField(
               hint: 'Title',
+              maxLines: 2,
             ),
-            SizedBox(height: 16,),
+            SizedBox(height: 16),
             CustomTextField(
               hint: 'content',
-              maxLines: 5,
+              maxLines: 6,
             ),
-            SizedBox(height: 50,),
-            CustomButtom()
+            SizedBox(height: 50),
+            CustomButtom(),
           ],
         ),
       ),
